@@ -6,8 +6,8 @@ pkgrel=3
 pkgdesc='Base heera os  filesystem'
 arch=('x86_64')
 license=('GPL')
-url='https://github.com/heera-os/heera-base.git
-depends=('iana-etc' git' )
+url='https://github.com/heera-os/heera-base.git'
+depends=('iana-etc' 'git' )
 provides=('filesystem=2021.01.19-1')
 conflicts=('filesystem')
 backup=('etc/crypttab' 'etc/fstab' 'etc/group' 'etc/gshadow' 'etc/host.conf'
