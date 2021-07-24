@@ -1,0 +1,39 @@
+# Maintainer: rajan pandey <pandey11rajan@gmail.com>
+pkgname=heera-calamares
+pkgver=r6.b241082
+pkgrel=1
+pkgdesc="Heera Calamares Installer"
+arch=('x86_64')
+url="https://github.com/heera-os/heera-calamares.git"
+license=('GPL3')
+groups=('heeraDE')
+depends=('yaml-cpp' 'plasma-framework' 'libpwquality' 'qt5-webengine' 'appstream-qt' 'kdbusaddons')
+makedepends=('git' 'cmake' 'extra-cmake-modules' 'ninja' 'boost-libs' 'kpmcore' 'kparts' 'python-pyqt5')
+provides=("${pkgname}")
+conflicts=("${pkgname}")
+source=("${pkgname}::git+${url}")
+md5sums=('SKIP')
+
+pkgver() {
+        cd "$srcdir/${pkgname}"
+
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
+build() {
+	cd "$srcdir/${pkgname}"
+        mkdir -p build && cd build
+        rm -f CMakeCache.txt
+	cmake \
+		-G Ninja \
+		-DCMAKE_BUILD_TYPE=Release \
+		..
+	cmake --build .
+}
+
+package() {
+	cd "$srcdir/${pkgname}"
+        cd build
+	DESTDIR="$pkgdir/" cmake --install .
+}
+
