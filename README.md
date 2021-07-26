@@ -5,7 +5,7 @@
 Add following lines to your /etc/pacman.conf.
 
 ```
-[heera]
+[heera-git]
 SigLevel = Optional
 Server = https://heera-os.github.io/archrepo/$arch/
 ```
