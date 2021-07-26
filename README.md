@@ -5,7 +5,7 @@
 Add following lines to your /etc/pacman.conf.
 
 ```
-[cutefish-git]
+[heera]
 SigLevel = Optional
 Server = https://heera-os.github.io/archrepo/$arch/
 ```
