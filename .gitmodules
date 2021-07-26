@@ -1,3 +1,6 @@
 [submodule "heera-mirrorlist"]
 	path = heera-mirrorlist
 	url = https://github.com/heera-os/heera-mirrorlist
+[submodule "heera-base"]
+	path = heera-base
+	url = https://github.com/heera-os/heera-base/

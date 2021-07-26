@@ -1,8 +1,0 @@
-NAME="HeeraOS"
-PRETTY_NAME="HeeraOS"
-ID=heeraos
-BUILD_ID=rolling
-ANSI_COLOR="0;94"
-HOME_URL="https://heera-os.github.io/"
-DOCUMENTATION_URL="https://heera-os.github.io/docs/"
-LOGO=heeraos
