@@ -1,6 +1,6 @@
 # Archlinux Repository for Heera OS
 
-If you prefer more stable releases (versioned), see https://github.com/heera-os/archrepo
+If you prefer more stable releases (versioned), see https://github.com/heera-os/archrepo-stable
 
 ### Usage
 
