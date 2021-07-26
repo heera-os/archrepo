@@ -6,18 +6,13 @@ pkgdesc="Heera Kwin Plugins"
 arch=('x86_64')
 url="https://github.com/heera-os/heera-kwin-plugins.git"
 license=('GPL3')
-groups=('heeraDE')
+groups=('heera-git')
 depends=('kwin')
 makedepends=('git' 'cmake' 'extra-cmake-modules' 'gcc' 'ninja')
 provides=("${pkgname}")
 conflicts=("${pkgname}")
 source=("${pkgname}::git+${url}")
 md5sums=('SKIP')
-
-prepare() {
-        cd "$srcdir/${pkgname}"
-
-}
 
 pkgver() {
         cd "$srcdir/${pkgname}"

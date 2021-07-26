@@ -6,19 +6,13 @@ pkgdesc="Heera Launcher"
 arch=('x86_64')
 url="https://github.com/heera-os/heera-launcher.git"
 license=('GPL3')
-groups=('heeraDE')
+groups=('heera-git')
 depends=('qt5-declarative' 'kwindowsystem')
 makedepends=('git' 'cmake' 'qt5-tools' 'qt5-quickcontrols2' 'extra-cmake-modules' 'gcc' 'ninja')
 provides=("${pkgname}")
 conflicts=("${pkgname}")
 source=("${pkgname}::git+${url}")
 md5sums=('SKIP')
-
-prepare() {
-        cd "$srcdir/${pkgname}"
-
-       
-}
 
 pkgver() {
         cd "$srcdir/${pkgname}"

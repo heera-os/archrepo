@@ -6,7 +6,7 @@ pkgdesc="heera dot files"
 arch=('any')
 url="https://github.com/heera-os/heera-default-settings.git"
 license=('GPL3')
-groups=('heeraDE')
+groups=('heera-git')
 depends=()
 makedepends=('git' 'cmake')
 provides=("${pkgname}")
@@ -14,10 +14,6 @@ conflicts=("${pkgname}")
 options=('!strip')
 source=("${pkgname}::git+${url}")
 md5sums=('SKIP')
-
-prepare() {
-        cd "$srcdir/${pkgname}"   
-}
 
 pkgver() {
         cd "$srcdir/${pkgname}"

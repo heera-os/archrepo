@@ -6,17 +6,13 @@ pkgdesc="Heera Settings"
 arch=('x86_64')
 url="https://github.com/heera-os/heera-settings.git"
 license=('GPL3')
-groups=('heeraDE')
+groups=('heera-git')
 depends=('qt5-declarative' 'freetype2' 'qt5-tools' 'qt5-x11extras' 'heera-user-interface')
 makedepends=('git' 'kcoreaddons' 'cmake' 'extra-cmake-modules' 'gcc' 'ninja' 'extra-cmake-modules' 'qt5-base' 'qt5-quickcontrols2' 'fontconfig' 'networkmanager-qt' 'modemmanager-qt')
 provides=("${pkgname}")
 conflicts=("${pkgname}")
 source=("${pkgname}::git+${url}")
 md5sums=('SKIP')
-
-prepare() {
-        cd "$srcdir/${pkgname}"
-}
 
 pkgver() {
         cd "$srcdir/${pkgname}"

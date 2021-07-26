@@ -31,7 +31,7 @@ jobs:
       - name: Add local repository  # this contains the latest built packages
         run: printf "[pkgs]\nSigLevel = Optional\nServer = file://"${{ env.PKGS_DIR }}"/\$arch\n" >> /etc/pacman.conf
       - name: Add heera github repository # this contains the previous built packages, helps pacman find missing deps
-        run: printf "[heera]\nSigLevel = Optional\nServer = https://heera-os.github.io/archrepo/\$arch\n" >> /etc/pacman.conf
+        run: printf "[heera-git]\nSigLevel = Optional\nServer = https://heera-os.github.io/archrepo/\$arch\n" >> /etc/pacman.conf
       - run: ./action.sh initialize
       - run: ./action.sh ci_build
       - uses: actions/checkout@v2

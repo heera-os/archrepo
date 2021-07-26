@@ -15,7 +15,7 @@ MAKEFLAGS="-j$(nproc)"
 : ${GIT_BRANCH:="gh-pages"}
 
 GITHUB_REPO_OWNER=${GITHUB_REPOSITORY%/*}
-ARCH_REPO_NAME=heera
+ARCH_REPO_NAME=heera-git
 
 create_local() {
 	mkdir -pv $PKGS_DIR/x86_64
@@ -50,6 +50,7 @@ initialize() {
 
 build() {
 	export MAKEFLAGS="-j$(nproc)"
+	printf "[heera-git]\nSigLevel = Optional\nServer = https://heera-os.github.io/archrepo/\$arch\n" >> /etc/pacman.conf
 
 	mkdir -pv "${PKGS_DIR}"
 
