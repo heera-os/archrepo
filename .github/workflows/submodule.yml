@@ -1,0 +1,27 @@
+name: Submodule Sync
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch: ~
+
+jobs:
+  heera-base:
+    runs-on: ubuntu-latest
+    steps:
+      - name: heera-base
+        uses: mheap/submodule-sync-action@v1
+        with:
+          path: heera-base
+          ref: master
+          pr_branch: automated-submodule-update
+          target_branch: main
+  heera-mirrorlist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Submodule Sync
+        uses: mheap/submodule-sync-action@v1
+        with:
+          path: heera-mirrorlist
+          ref: main
+          pr_branch: automated-submodule-update
+          target_branch: main
