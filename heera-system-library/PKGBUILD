@@ -7,7 +7,8 @@ arch=('x86_64')
 url="https://github.com/heera-os/heera-system-library.git"
 license=('GPL3')
 groups=('heera-git')
-depends=('libkscreen' 'qt5-quickcontrols2' 'kio' 'networkmanager-qt' 'qt5-sensors' 'kcoreaddons' 'modemmanager-qt')
+depends=('libkscreen' 'qt5-quickcontrols2' 'kio5' 'networkmanager-qt5'
+	'qt5-sensors' 'kcoreaddons5' 'modemmanager-qt5')
 makedepends=('git' 'cmake' 'extra-cmake-modules' 'gcc' 'ninja')
 provides=("${pkgname}")
 conflicts=("${pkgname}")

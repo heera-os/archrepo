@@ -7,8 +7,10 @@ arch=('x86_64')
 url="https://github.com/heera-os/heera-calamares.git"
 license=('GPL3')
 groups=('heera-git')
-depends=('yaml-cpp' 'plasma-framework' 'libpwquality' 'qt5-webengine' 'appstream-qt' 'kdbusaddons')
-makedepends=('git' 'cmake' 'extra-cmake-modules' 'ninja' 'boost-libs' 'kpmcore' 'kparts' 'python-pyqt5' 'qt5-tools')
+depends=('yaml-cpp' 'plasma-framework5' 'libpwquality' 'qt5-webengine'
+	'appstream-qt' 'kdbusaddons5')
+makedepends=('git' 'cmake' 'extra-cmake-modules' 'ninja' 'boost-libs' 'kpmcore'
+	'kparts' 'python-pyqt5' 'qt5-tools')
 provides=("${pkgname}")
 conflicts=("${pkgname}")
 source=("${pkgname}::git+${url}")
