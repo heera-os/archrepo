@@ -1,6 +1,6 @@
 # Maintainer: Rajan Pandey <>
 pkgname=qhotkey
-pkgver=r111.eb7ddab
+pkgver=r131.cd72a01
 pkgrel=1
 pkgdesc=""
 arch=('x86_64')

@@ -1,6 +1,6 @@
 # Maintainer: rajan pandey <pandey11rajan@gmail.com>
 pkgname=heera-default-settings
-pkgver=r2.e28e7aa
+pkgver=r4.6d9fbd6
 pkgrel=1
 pkgdesc="heera dot files"
 arch=('any')

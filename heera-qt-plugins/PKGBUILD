@@ -1,6 +1,6 @@
 # Maintainer: rajan pandey <pandey11rajan@gmail.com>
 pkgname=heera-qt-plugins
-pkgver=r3.557c677
+pkgver=r6.e6ae58d
 pkgrel=1
 pkgdesc="Heera QT Plugins"
 arch=('x86_64')

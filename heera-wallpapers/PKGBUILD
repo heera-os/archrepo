@@ -1,6 +1,6 @@
 # Maintainer: rajan pandey <pandey11rajan@gmail.com>
 pkgname=heera-wallpapers
-pkgver=r3.69abc27
+pkgver=r4.642a97f
 pkgrel=1
 pkgdesc="heera Wallpapers"
 arch=('any')

@@ -1,6 +1,6 @@
 # Maintainer: rajan pandey <pandey11rajan@gmail.com>
 pkgname=heera-icon-theme
-pkgver=r3.ae13e36
+pkgver=r7.a4888e90
 pkgrel=1
 pkgdesc="heera Icons"
 arch=('any')
